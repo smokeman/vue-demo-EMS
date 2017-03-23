@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>mint-demo</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	 <!-- 重置样式 -->
+    <link type="text/css" href="./src/assets/css/reset.css"  rel="stylesheet" />
+	<script src="./src/assets/js/iconfont.js"></script>
+    <script>
+	(function(win,doc){
+		function change(){
+			doc.documentElement.style.fontSize=doc.documentElement.clientWidth/320*20+'px';	
+		}	
+		change();
+		win.addEventListener('resize',change,false);
+	})(window,document);	
+</script>
+</head>
+
+
+<div id="app">
+</div>
+<script src="/dist/build.js"></script>
+</body>
+
+</html>
